@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rec'n'Play</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="manifest" href="/sound-recorder-player-pwa/manifest.json">
+    <link rel="shortcut icon" href="./assets/img/logo.jpg" type="image/x-icon">
+</head>
+<body>
+    <h1>Rec'n'Play</h1>
+    <button id="recordButton">Record</button>
+    <div id="soundButtons">
+        <div class="starting-sounds">
+            <button class="playButton" data-sound="kick">Kick</button>
+            <button class="playButton" data-sound="snare">Snare</button>
+            <button class="playButton" data-sound="hat">Hat</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/idb@8/build/umd.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        if (navigator.serviceWorker) {
+          navigator.serviceWorker.register (
+            '/sound-recorder-player-pwa/sw.js',
+            {scope: '/sound-recorder-player-pwa/'}
+          )
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+    "name": "Rec'n'Play",
+    "short_name": "Rec'n'Play",
+    "description": "Record and Play Sounds",
+   
+    "scope": "/sound-recorder-player-pwa/",
+    "start_url": "/sound-recorder-player-pwa/",
+   
+    "background_color": "rgb(253, 255, 254)",
+    "theme_color": "rgb(253, 255, 254)",
+   
+    "display": "fullscreen", 
+   
+    "icons": [
+        {
+          "src": "/sound-recorder-player-pwa/logo.jpg",
+          "type": "image/jpg",
+          "sizes": "700x700"
+        }
+    ]
+  }

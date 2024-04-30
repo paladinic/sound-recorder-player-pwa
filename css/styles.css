@@ -1,0 +1,110 @@
+:root{
+    --grey: #edefe7;
+    --red: #d60024;
+    --green: #9c7500;
+    --blue: #2a2a43;
+    --white: #f3f7e5;
+    --border-radius: .3rem;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+    background-image: radial-gradient(circle at center center, var(--grey),var(--white) ), repeating-radial-gradient(circle at center center, var(--grey), var(--grey), 10px, transparent 20px, transparent 10px);
+    background-blend-mode: multiply;
+}
+h1{
+    text-transform: uppercase;
+    font-weight: 800;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    margin: 1rem auto;
+}
+button {
+    border: .3rem solid var(--white);
+    border-radius: var(--border-radius);
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+    width: 12rem;
+    height: 7rem;
+    font-weight: 800;
+    transition: .2s;
+}
+
+#recordButton{
+    background-color: var(--red);
+    margin: 1rem auto;
+}
+#soundButtons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 1rem auto;
+    justify-content: space-evenly;
+}
+#soundButtons .starting-sounds{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: .5rem auto;
+}
+.playButton{
+    background-color: var(--blue);
+    margin: 0 auto;
+}
+#soundButtons .sound-container{
+    margin: .5rem auto;
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+}
+#soundButtons .sound-container button{
+    height: 5rem;
+}
+#soundButtons .sound-container .playButton{
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    /* margin: 0 auto; */
+    border-right: 0;
+    width: 16rem;
+}
+#soundButtons .sound-container .rename-button{
+    background-color: var(--green);
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+}
+#soundButtons .sound-container .delete-button{
+    background-color: var(--red);
+    border-radius: 0 var(--border-radius) var(--border-radius) 0 ;
+    border-left: 0;
+}
+#soundButtons .sound-container .rename-button,
+#soundButtons .sound-container .delete-button{
+    width: 3rem;
+    font-size: .75rem;
+    writing-mode: vertical-lr;
+    text-align: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+@media (max-width: 900px){
+    button{
+        height: 5rem;
+        width: 7rem;
+        font-size: 1rem;
+    }
+
+}
