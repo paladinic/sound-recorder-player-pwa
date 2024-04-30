@@ -2,7 +2,7 @@
 Sound Recorder PWA is an open-source progressive web app that allows users to record, play, manage, and rename audio clips directly in their browser. 
 It leverages IndexedDB for robust, offline-capable storage of audio data.
 
-Visit the [live app](URL).
+Visit the [live app](https://paladinic.github.io/sound-recorder-player-pwa/).
 
 ## Features:
 - Record and manage audio clips.
