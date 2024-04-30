@@ -13,7 +13,7 @@
    
     "icons": [
         {
-          "src": "/sound-recorder-player-pwa/logo.png",
+          "src": "/sound-recorder-player-pwa/assets/img/logo.png",
           "type": "image/png",
           "sizes": "700x700"
         }
