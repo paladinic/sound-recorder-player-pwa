@@ -6,7 +6,7 @@ var VERSION = 'version_00';
  
 var URLS = [    
   `${GHPATH}/`,
-  `${GHPATH}/assets/img/logo.jpg`,
+  `${GHPATH}/assets/img/logo.png`,
   `${GHPATH}/assets/sounds/hat.wav`,
   `${GHPATH}/assets/sounds/snare.wav`,
   `${GHPATH}/assets/sounds/kick.wav`,
